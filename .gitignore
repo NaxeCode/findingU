@@ -1,4 +1,3 @@
-/[Ee]xport/*
-/[Ww]ork files/
-/.vscode/
-export/flash/haxe/ApplicationMain.hx
+
+export/.build
+export/flash/bin/findingU.swf
