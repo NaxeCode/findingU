@@ -1,8 +1,3 @@
-.vscode/*
-export/*
-work files/*
-export/flash/haxe/ApplicationMain.hx
-export/flash/haxe/debug.hxml
-export/flash/haxe/final.hxml
-export/flash/haxe/ManifestResources.hx
-export/flash/haxe/release.hxml
+findingU/.vscode/
+findingU/export/
+findingU/work files/
