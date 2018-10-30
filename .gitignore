@@ -3,5 +3,5 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-export/*
-work files/*
+export/
+work files/
