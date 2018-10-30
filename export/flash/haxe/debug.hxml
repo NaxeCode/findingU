@@ -24,6 +24,8 @@
 -D fdb
 -D web
 --macro flixel.system.macros.FlxDefines.run()
+--connect
+6000
 -cp export/flash
 -swf-lib obj/assets.swf
 -swf-version 11.8
