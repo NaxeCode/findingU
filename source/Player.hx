@@ -13,6 +13,8 @@ class Player extends FlxSprite
 
     var speed:Int = 200;
 
+    var canMove:Bool = true;
+
     public function new()
     {
         super();
@@ -30,6 +32,9 @@ class Player extends FlxSprite
 
     function handleMovement()
     {
+        if (!canMove)
+            return;
+        
         up = FlxG.keys.anyPressed([UP, W]);
         down = FlxG.keys.anyPressed([DOWN, S]);
         left = FlxG.keys.anyPressed([LEFT, A]);
