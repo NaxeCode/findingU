@@ -3,6 +3,7 @@ package;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.math.FlxPoint;
+import flixel.math.FlxMath;
 
 class Player extends FlxSprite
 {
@@ -10,6 +11,8 @@ class Player extends FlxSprite
     var down:Bool = false;
     var left:Bool = false;
     var right:Bool = false;
+
+    var spaceBar:Bool = false;
 
     var speed:Int = 200;
 
@@ -27,6 +30,7 @@ class Player extends FlxSprite
     override public function update(elapsed:Float):Void
     {
         handleMovement();
+        handleNPC();
         super.update(elapsed);
     }
 
@@ -74,5 +78,21 @@ class Player extends FlxSprite
         }
 
         //if (up)
+    }
+
+    function handleNPC()
+    {
+        spaceBar = FlxG.keys.justPressed.SPACE;
+
+        if (spaceBar && canMove)
+        {
+            PlayState.npcsGroup.forEachAlive(function(intractable) 
+            {
+                if (FlxMath.distanceBetween(this, intractable) <= 150)
+                {
+                    
+                }
+            });
+        }
     }
 }
