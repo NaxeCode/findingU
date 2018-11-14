@@ -11,7 +11,7 @@ class PlayState extends FlxState
 	var player:Player;
 	var testChar:FlxSprite;
 
-	public var npcsGroup:FlxTypedGroup<Intractable>;
+	public static var npcsGroup:FlxTypedGroup<Intractable>;
 
 	override public function create():Void
 	{
